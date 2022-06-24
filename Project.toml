@@ -1,0 +1,13 @@
+name = "CartesianCore"
+uuid = "b1b87794-22cb-46b0-a31c-6d11dc703d98"
+authors = ["Vincent Le Chenadec <vincentlechenadec@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
