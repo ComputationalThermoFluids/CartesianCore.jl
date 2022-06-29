@@ -6,7 +6,7 @@ using Accessors
 import Base: OneTo, empty
 import Base.Iterators: drop, take
 
-export Lattice, infinite, finite, periodic
+export Lattice, Infinite, infinite, Finite, finite, Periodic, periodic
 export isperiodic
 export hasborder, dropborder, takeborder
 
