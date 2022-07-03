@@ -1,7 +1,7 @@
 name = "CartesianCore"
 uuid = "b1b87794-22cb-46b0-a31c-6d11dc703d98"
 authors = ["Vincent Le Chenadec <vincentlechenadec@gmail.com> and contributors"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 Accessors = "7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"
