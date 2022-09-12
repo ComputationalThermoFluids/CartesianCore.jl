@@ -6,7 +6,7 @@ using Accessors
 import Base: OneTo, empty
 import Base.Iterators: drop, take
 
-export findin
+export findrange
 export Lattice, Infinite, infinite, Finite, finite, Periodic, periodic
 export isperiodic
 export hasborder, dropborder, takeborder

@@ -1,5 +1,5 @@
 """
-    findin(subset, set)
+    findrange(subset, set)
 
 Return the indices of the elements of `subset` in `set`. `ArgumentError` is thrown if
 `subset` is not a subset of `set`.
@@ -11,7 +11,7 @@ Return the indices of the elements of `subset` in `set`. `ArgumentError` is thro
 
 """
 #=
-function findin(subset::AbstractUnitRange, collection::AbstractUnitRange)
+function findrange(subset::AbstractUnitRange, collection::AbstractUnitRange)
     start = findfirst(isequal(first(subset)), collection)
     isnothing(start) && return nothing
 
@@ -21,7 +21,7 @@ function findin(subset::AbstractUnitRange, collection::AbstractUnitRange)
     promote_type(typeof(subset), typeof(collection))(start, stop)
 end
 =#
-function findin(subset::AbstractUnitRange, set::AbstractUnitRange)
+function findrange(subset::AbstractUnitRange, set::AbstractUnitRange)
     !issubset(subset, set) &&
         throw(ArgumentError("Not a subset"))
 
